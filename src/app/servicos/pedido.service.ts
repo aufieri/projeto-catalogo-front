@@ -4,7 +4,7 @@ import { Pedido } from "../modelo/Pedido";
 
 export class PedidoService{
 
-url:string = 'http://localhost:59449';
+url:string = 'http://localhost:4200';
 constructor(private http:HttpClient){}
 
 //Metodo de selecionar Pedido com 'get' //

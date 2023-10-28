@@ -4,7 +4,7 @@ import { Usuario } from "../modelo/Usuario";
 
 export class UsuarioService{
 
-    private url:string = 'http://localhost:54994';
+    private url:string = 'http://localhost:4200';
     constructor(private http:HttpClient){}
 
     //Metodo de selecionar Usuario com 'get' //

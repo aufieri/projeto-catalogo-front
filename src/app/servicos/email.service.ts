@@ -6,7 +6,7 @@ import { Email } from "../modelo/Email";
 
 export class EmailService{
 
-        url:string = 'http://localhost:59449';
+        url:string = 'http://localhost:4200';
         constructor(private http:HttpClient){}
 
         //Metodo de selecionar Email com 'get' //

@@ -3,7 +3,7 @@ import {Observable} from 'rxjs'
 import { ProdutoPed } from "../modelo/ProdutoPed";
 
 export class ProdutoPedService{
-    url:string = 'http://localhost:59449'
+    url:string = 'http://localhost:4200'
     constructor(private http:HttpClient){}
 
     //Metodo de selecionar Produto Pedido com 'get' //

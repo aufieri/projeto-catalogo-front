@@ -4,7 +4,7 @@ import { Produto } from "../modelo/Produto";
 
 export class ProdutoService{
 
-    private url:string = 'http://localhost:59449'
+    private url:string = 'http://localhost:4200'
     constructor(private http:HttpClient){}
         
     //Metodo de selecionar Produto com 'get' //
