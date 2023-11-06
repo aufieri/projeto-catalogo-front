@@ -1,0 +1,44 @@
+.example-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 0, 0);
+  }
+  
+  .item {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 10px;
+    border: 2px solid #595959; /* Cor da borda */
+    border-radius: 10px; /* Arredondamento das bordas */
+    padding: 10px; /* Espaçamento interno */
+    width: 200px; /* Largura do item */
+    text-align: center; /* Alinhamento do texto no centro */
+    box-shadow: 5px 2px 4px rgb(171, 171, 171); /* Sombra */
+    background-color: rgb(255, 255, 255); /* Cor de fundo do item */
+    margin: 30px; /* Espaçamento externo */
+  }
+  
+  .imagens {
+    height: 220px;
+    width: 220px;
+    margin-right: 10px; 
+  }
+
+  .titulo {
+    font-weight: bold;
+    margin-top: 10px; 
+    font-size: 18px; /* Tamanho da fonte do título */
+    margin: 0; /* Remover margem padrão */
+    color: #333; /* Cor do texto do título */
+  }
+ 
+  .desc{
+    color: black
+  }
+
+ 
+  

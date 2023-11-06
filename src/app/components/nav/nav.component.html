@@ -1,0 +1,48 @@
+<mat-drawer-container class="cabecalho" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+      <mat-nav-list class="nav-list">
+   
+   
+        <a mat-list-item routerLink="/">
+            <i class="material-icons">person</i>
+            Faça seu Login
+   </a>
+
+   <a mat-list-item routerLink="home">
+    <i class="material-icons">home</i>
+   Home
+</a>
+   
+   <a mat-list-item routerLink="/">
+    <i class="material-icons">event_note</i>
+    Histórico 
+    </a>
+
+   <a mat-list-item routerLink="/">
+    <i class="material-icons">shopping_cart</i>
+    Carrinho
+    </a>
+      
+    <a mat-list-item routerLink="/">
+        <i class="material-icons">person</i>
+        Contato
+    </a>
+    
+    <a mat-list-item routerLink="/">
+    <i class="material-icons">logout</i>
+    logout
+    </a>
+
+      </mat-nav-list>
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+      
+      <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <app-cabecalho></app-cabecalho>
+      <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>
