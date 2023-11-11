@@ -7,7 +7,7 @@
     width: 13rem;
     color: white;
     background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,0.8239670868347339) 0%, rgba(134,134,134,1) 99%);
+    background: linear-gradient(90deg, rgba(134,134,134,1) 99%, rgba(255, 255, 255, 0.824) 0%);
 
 }
 
@@ -23,5 +23,5 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8239670868347339) 0%, rgba(134,1
     margin: 1rem 0 0 1rem;
     color: white;
     background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,0.8239670868347339) 0%, rgba(134,134,134,1) 99%);
+    background: linear-gradient(90deg, rgba(0,0,0,0.8239670868347339) 0%, rgb(255, 255, 255) 99%);
 }
