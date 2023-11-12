@@ -4,6 +4,8 @@
     align-items: center;
     text-align: center;
     color: rgb(255, 0, 0);
+    background-color: rgb(245, 245, 245);
+  
   }
   
   .item {
@@ -12,15 +14,27 @@
     align-items: center;
     padding: 3rem;
     border-radius: 10px;
-    border: 2px solid #595959; /* Cor da borda */
+   /* border: 2px solid aliceblue; /* Cor da borda */
     border-radius: 10px; /* Arredondamento das bordas */
     padding: 10px; /* Espaçamento interno */
     width: 200px; /* Largura do item */
     text-align: center; /* Alinhamento do texto no centro */
-    box-shadow: 5px 2px 4px rgb(171, 171, 171); /* Sombra */
-    background-color: rgb(255, 255, 255); /* Cor de fundo do item */
+   /* box-shadow: 5px 2px 4px rgb(171, 171, 171); /* Sombra */
+    background-color: rgba(209, 228, 245, 0.745); /* Cor de fundo do item */
     margin: 30px; /* Espaçamento externo */
+    transition: box-shadow 0.3s ease-in-out; /* Adiciona uma transição suave à sombra */
+
+    /* Define a sombra padrão sem passar o mouse */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+   
   }
+
+  .item:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  
   
   .imagens {
     height: 220px;
@@ -39,6 +53,7 @@
   .desc{
     color: black
   }
+  
 
  
   
