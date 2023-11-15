@@ -2,6 +2,7 @@
     width: 90%;
     margin: auto;
     background-color: rgb(235, 235, 235);
+    height: 15rem;
 }
 
 img {
@@ -10,8 +11,4 @@ img {
 
 .nome{
     color: black;
-}
-
-body{
-    background-color: white;
 }
