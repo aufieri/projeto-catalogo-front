@@ -30,7 +30,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
 import { TabelaComponent } from './components/tabela/tabela.component';
-import { CategoriasComponent } from './components/categorias/categorias.component';
+import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
 
 
 
@@ -42,7 +42,7 @@ import { CategoriasComponent } from './components/categorias/categorias.componen
     HomeComponent,
     CabecalhoComponent,
     TabelaComponent,
-    CategoriasComponent,
+    ClienteListComponent,
     
 
   ],

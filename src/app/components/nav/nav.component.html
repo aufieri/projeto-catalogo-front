@@ -1,4 +1,4 @@
-<mat-drawer-container class="cabecalho" autosize>
+<mat-drawer-container class="container" autosize>
     <mat-drawer #drawer class="sidenav" mode="side">
       <mat-nav-list class="nav-list">
    
@@ -23,9 +23,9 @@
     Carrinho
     </a>
       
-    <a mat-list-item routerLink="/">
+    <a mat-list-item routerLink="clientes">
         <i class="material-icons">person</i>
-        Contato
+        Clientes
     </a>
     
     <a mat-list-item routerLink="/">
@@ -37,11 +37,10 @@
     </mat-drawer>
   
     <div class="sidenav-content">
-      
+      <app-cabecalho></app-cabecalho>
       <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
         <mat-icon>menu</mat-icon>
-      </button> 
-    
+      </button>
       <router-outlet></router-outlet>
     </div>
   
