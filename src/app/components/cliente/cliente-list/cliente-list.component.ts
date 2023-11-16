@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Usuario } from 'src/app/modelo/Usuario';
+import { UsuarioService } from 'src/app/servicos/usuario.service';
 
 @Component({
   selector: 'app-cliente-list',
@@ -10,29 +11,31 @@ import { Usuario } from 'src/app/modelo/Usuario';
 })
 export class ClienteListComponent implements OnInit{
 
-  ELEMENT_DATA: Usuario[] = [
-    {
-      id: 0,
-      tipoUsuario: 0,
-      nome: 'Mitsu',
-      email: 'mitsu.junior1215@outlook.com',
-      senha: '12345'
-    }
-  ]
+  ELEMENT_DATA: Usuario[] = []
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['id', 'nome', 'email', 'acoes'];
   dataSource = new MatTableDataSource<Usuario>(this.ELEMENT_DATA);
   
-  constructor() {}
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  
+  constructor(
+    private service: UsuarioService
+  ) {}
 
   ngOnInit(): void {
-      
+      this.findAll();
   }
 
+  findAll() {
+    this.service.selecionar().subscribe( resposta => {
+      this.ELEMENT_DATA = resposta
+      this.dataSource = new MatTableDataSource<Usuario>(resposta)
+      this.dataSource.paginator = this.paginator;
+    })
+  }
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }
