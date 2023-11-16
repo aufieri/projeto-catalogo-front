@@ -31,6 +31,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
 import { TabelaComponent } from './components/tabela/tabela.component';
 import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
+import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
 
 
 
@@ -43,6 +44,7 @@ import { ClienteListComponent } from './components/cliente/cliente-list/cliente-
     CabecalhoComponent,
     TabelaComponent,
     ClienteListComponent,
+    ClienteCreateComponent,
     
 
   ],
