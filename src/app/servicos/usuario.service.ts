@@ -1,15 +1,19 @@
 import {HttpClient} from '@angular/common/http'
 import { Observable } from "rxjs";
 import { Usuario } from "../modelo/Usuario";
+import { Injectable } from '@angular/core';
 
+@Injectable({
+    providedIn: 'root'
+  })
 export class UsuarioService{
 
-    private url:string = 'http://localhost:4200';
+    private url:string = 'http://localhost:8080';
     constructor(private http:HttpClient){}
 
     //Metodo de selecionar Usuario com 'get' //
-    selecionar():Observable<Usuario>{
-        return this.http.get<Usuario>(this.url);
+    selecionar():Observable<Usuario[]>{
+        return this.http.get<Usuario[]>(this.url+"/usuario");
     }
 
     //Metodo para cadastrar o usuario com com 'post' //
