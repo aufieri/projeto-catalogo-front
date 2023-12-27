@@ -33,6 +33,9 @@ import { TabelaComponent } from './components/tabela/tabela.component';
 import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
 import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
 import { PagamentosComponent } from './components/pagamentos/pagamentos.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CategoriasComponent } from './components/categorias/categorias.component';
+
 
 
 
@@ -47,6 +50,8 @@ import { PagamentosComponent } from './components/pagamentos/pagamentos.componen
     ClienteListComponent,
     ClienteCreateComponent,
     PagamentosComponent,
+    FooterComponent,
+    CategoriasComponent
     
 
   ],
