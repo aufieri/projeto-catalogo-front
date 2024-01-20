@@ -8,12 +8,16 @@ import { Injectable } from '@angular/core';
   })
 export class UsuarioService{
 
-    private url:string = 'http://localhost:8080';
+    private url:string = 'http://localhost:8080/usuario';
     constructor(private http:HttpClient){}
 
     //Metodo de selecionar Usuario com 'get' //
     selecionar():Observable<Usuario[]>{
-        return this.http.get<Usuario[]>(this.url+"/usuario");
+        return this.http.get<Usuario[]>(this.url);
+    }
+
+    selecionarPorTipo(tipo:number):Observable<Usuario[]>{
+        return this.http.get<Usuario[]>(this.url + "/findAllByType/" + tipo);
     }
 
     //Metodo para cadastrar o usuario com com 'post' //
