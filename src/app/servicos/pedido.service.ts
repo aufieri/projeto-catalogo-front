@@ -1,5 +1,5 @@
 import { HttpClient } from "@angular/common/http";
-import {Observable} from 'rxjs'
+import {Observable} from 'rxjs';
 import { Pedido } from "../modelo/Pedido";
 
 export class PedidoService{
