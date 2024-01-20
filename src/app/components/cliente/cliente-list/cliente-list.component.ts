@@ -27,7 +27,7 @@ export class ClienteListComponent implements OnInit{
   }
 
   findAll() {
-    this.service.selecionar().subscribe( resposta => {
+    this.service.selecionarPorTipo(1).subscribe( resposta => {
       this.ELEMENT_DATA = resposta
       this.dataSource = new MatTableDataSource<Usuario>(resposta)
       this.dataSource.paginator = this.paginator;
